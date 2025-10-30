@@ -12,6 +12,7 @@
 - Further extend builder patterns for all `MastNode` types, replace `enum-dispatch` by our own derivations ([#2291](https://github.com/0xMiden/miden-vm/pull/2291)).
 - Finish builder pattern conversion and delete old `MastNode` mutable APIs ([#2301](https://github.com/0xMiden/miden-vm/pull/2301)).
 - Hoist `BasicBlock` decorator storage to the `MastForest` after insertion in said `MastForest` ([#2310](https://github.com/0xMiden/miden-vm/pull/2310)).
+- [BREAKING] hoist before_enter and after_exit decorators to MastForest ([#2323](https://github.com/0xMiden/miden-vm/pull/2323)).
 
 ## 0.19.1 (2025-11-6)
 
@@ -58,6 +59,8 @@
 - Removed `FmpUpdate` and `FmpAdd` operations, as well as columns `fmp` and `in_syscall` ([#2308](https://github.com/0xMiden/miden-vm/pull/2308)).
 - [BREAKING] Updated `miden-crypto` dependency to v0.18 (#[2311](https://github.com/0xMiden/miden-vm/pull/2311)).
 - [BREAKING] Refined precompile verification plumbing ([#2325](https://github.com/0xMiden/miden-vm/pull/2325)).
+- Fix decorator offset bug in `BasicBlockNode` padding ([#2305](https://github.com/0xMiden/miden-vm/pull/2305)).
+- [BREAKING] Update miden-crypto dependency to v0.18 (#[2311](https://github.com/0xMiden/miden-vm/pull/2311)).
 
 ## 0.18.3 (2025-10-27)
 
